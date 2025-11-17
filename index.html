@@ -1,99 +1,390 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
-    <title>medcare Website - icode on Fenix-wings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website - icode on fenixwingsTech</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <nav>
                 <p class="logo"><span>Med</span>Care</p>
-                <ul class="nav-links" id="nav-links">
-                    <l1><a href="#">Home</a></l1>
-                    <l1><a href="#">About</a></l1>
-                    <l1><a href="#">Service</a></l1>
-                    <l1><a href="#">Medical Team</a></l1>
-                    <l1><a href="#">Testimonials</a></l1>    
+                <ul  class="nav-links"id="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#team">Medical Team</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
                 </ul>
                 <div class="nav-right">
-                    <a href="#">Appointments</a>
+                    <a href="#">Appointment</a>
                 </div>
                 <div class="hamburger-menu"id="menuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>                
             </nav>
             <div class="hero-content">
                 <div class="hero-left">
-                    <h2>Reliable Medical care, Delivered with<span> Heart</span> and <span> Precision</span></h2>
-                    <p>Compassion care and trusted professionas at your service, delivering expect treaments and dedicated support when you need it most</p>
+                    <h2>Reliable Medical Care, Delivered with <span>Heart</span> and <span> Precision.</span></h2>
+                    <p>Compassionate care and trusted professionals at your service, delivering expert treatment and
+                        dedicated support when you need it most.</p>
                     <a href="#">
                         <i class="fas fa-check-circle"></i>
-                        <span>Book Appointmrent</span>
+                        <span>Book Appointment</span>
                     </a>
+                </div>
                 <div class="hero-right">
                     <img src="images/hero-image.png" alt="">
                 </div>
             </div>
         </section>
+        <section class="about" id="about">
+            <div class="what-we-provide">
+                <div class="info">
+                    <div class="icon-container">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="details">
+                        <p>24/7 Advanced Care</p>
+                        <p>Expert care from trusted medical specialists.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon-container" id="box2">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="details">
+                        <p>Specialized Service</p>
+                        <p>Care you can count on, any time.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon-container" id="box3">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <div class="details">
+                        <p>Get Results Online</p>
+                        <p>View your test results anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="left">
+                    <img src="images/about-image.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h2>Welcome To MedCare Central Hospital.</h2>
+                        <p>Medcare Central Hospital provides compassionate, expert care through a skilled team and
+                            modern medical technology in a patient-focused environment.</p>
+                        <p>The hospital is built on trust, offering 24/7 services and personalized treatments to support
+                            patients and families at every stage of care.</p>
+                    </div>
+                    <div class="stats-container">
+                        <div class="item">
+                            <p>10,000+</p>
+                            <p> Happy Patients</p>
+                        </div>
+                        <div class="item" id="box2">
+                            <p>250+</p>
+                            <p> Expert Doctors</p>
+                        </div>
+                        <div class="item" id="box3">
+                            <p>15+</p>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="item" id="box4">
+                            <p>50+</p>
+                            <p>Awards & Accreditations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="header">
+                <p>Our Services</p>
+                <h2>Your Health, Our Expertise</h2>
+            </div>
+            <div class="service-container serviceSwiper">
+                <div class="swiper-wrapper">
+                    <div class="service-card swiper-slide">
+                        <div class="icon-container">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <p>Eye Care</p>
+                        <p>Accurate eye exams and personalized vision care to keep your eyes healthy.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="service-card swiper-slide" id="box2">
+                        <div class="icon-container">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <p>Skin Care</p>
+                        <p>Gentle, expert skincare to keep your skin healthy, clear, and glowing.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="service-card swiper-slide" id="box3">
+                        <div class="icon-container">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <p>Surgical Care</p>
+                        <p>Advanced, precise surgical care focused on safety and recovery.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="service-card swiper-slide" id="box4">
+                        <div class="icon-container">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <p>Dental Care</p>
+                        <p>Trusted dental services for a clean, bright, and healthy smile.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="swiper-button-prev custom-button">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-button-next custom-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="left">
+                <p>Got an emergency? We’re here to help — contact us now.</p>
+                <p></p>
+            </div>
+            <div class="right">
+                <div class="info">
+                    <div class="icon-container">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-details">
+                        <p>Call Us</p>
+                        <p>+234 5558 777</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon-container">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-details">
+                        <p>Email Us</p>
+                        <p>medcare@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section" id="team">
+            <div class="header">
+                <p>Our Team</p>
+                <h2>Our Specialized Doctors</h2>
+            </div>
+            <div class="team-container">
+                <div class="member">
+                    <div class="image">
+                        <img src="images/team1.jpg" alt="team">
+                    </div>
+                    <div class="details">
+                        <p>Dr. Amina Roberts</p>
+                        <p>Dermatology</p>
+                    </div>
+                    <a href="#">Book Now</a>
+                </div>
+                <div class="member">
+                    <div class="image">
+                        <img src="images/team2.jpg" alt="team">
+                    </div>
+                    <div class="details">
+                        <p>Dr. Arjun Mehra</p>
+                        <p>Cardiology</p>
+                    </div>
+                    <a href="#">Book Now</a>
+                </div>
+                <div class="member">
+                    <div class="image">
+                        <img src="images/team3.jpg" alt="team">
+                    </div>
+                    <div class="details">
+                        <p> Dr. Clara Mensah</p>
+                        <p>Pediatrics</p>
+                    </div>
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section" id="testimonial">
+            <div class="header">
+                <p>Testimonials</p>
+                <h2>What our patients say about us</h2>
+            </div>
+            <div class="testimonials testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial">
+                        <img src="images/person1.jpg" alt="Aisha Khan">
+                        <p>Aisha Khan</p>
+                        <p>Lahore, Pakistan</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>Staff were kind and professional. My recovery was smooth and well-managed.</p>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <img src="images/person2.jpg" alt="Fatima Ahmed">
+                        <p>Fatima Ahmed</p>
+                        <p>Abu Dhabi, UAE</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Very clean hospital with attentive doctors. I felt safe the entire time.</p>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <img src="images/person3.jpg" alt="Emily Clarke">
+                        <p>Emily Clarke</p>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>I felt genuinely cared for during my visit. The staff were professional and kind throughout.
+                        </p>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <img src="images/person4.jpg" alt="Marcus Reed">
+                        <p>Marcus Reed</p>
+                        <p>Atlanta, USA</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>The doctors truly listened and cared. This hospital exceeded my expectations.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="subscribe-box">
+                <h2>Subscribe For New Updates From MedCare</h2>
+                <div class="input-container">
+                    <input type="text" placeholder="Example@gmail.com">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <p class="logo"><span>Med</span>Care</p>
+                    <p>MedCare delivers trusted and compassionate medical care with a focus on your well-being.</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                          <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#team">Medical Team</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <h3>External Links</h3>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">WebMD</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Mayo
+                                Clinic</a></li>
+                        <li><a href="#" target="_blank"
+                                rel="noopener noreferrer">Healthline</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">NHS (UK Health
+                                Service)</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">CDC (Centers for
+                                Disease Control)</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">World Health
+                                Organization (WHO)</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Drugs.com</a></li>
+                        <li><a href="#" target="_blank"
+                                rel="noopener noreferrer">MedlinePlus</a></li>
+                    </ul>
+                </div>
+
+                <div class="appointment">
+                    <h3>Book An Appointment</h3>
+                    <p>The doctorate staff members are well trained proffesionals</p>
+                    <a href="tel:+104554554555">Call: +10 455 455 4555 </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Okeowo Adegbenga Fenix-wingsTech.</p>
+            </div>
+        </footer>
+
     </main>
 
-    ,<script>
-        const menuBtn = document.getEmentById('menuBtn');
-        const links = document.getElementById('nav-links');
-       
-        menuBtn.addEventListener("clicks",openMenu);
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // swiper for services section
+        const swiper = new Swiper(".serviceSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+        const testimonialSwiper = new Swiper(".testimonialSwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("nav-links");
+
+        menuBtn.addEventListener("click",openMenu);
 
         function openMenu(){
-            links.classList.toggle('open');
-        };
-
+            navLinks.classList.toggle("active");
+        }
     </script>
-    
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	
-</script>
+
 </body>
+
 </html>
