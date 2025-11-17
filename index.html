@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+    <title>medcare Website - icode on Fenix-wings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <main>
+        <section class="hero-section">
+            <nav>
+                <p class="logo"><span>Med</span>Care</p>
+                <ul class="nav-links" id="nav-links">
+                    <l1><a href="#">Home</a></l1>
+                    <l1><a href="#">About</a></l1>
+                    <l1><a href="#">Service</a></l1>
+                    <l1><a href="#">Medical Team</a></l1>
+                    <l1><a href="#">Testimonials</a></l1>    
+                </ul>
+                <div class="nav-right">
+                    <a href="#">Appointments</a>
+                </div>
+                <div class="hamburger-menu"id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h2>Reliable Medical care, Delivered with<span> Heart</span> and <span> Precision</span></h2>
+                    <p>Compassion care and trusted professionas at your service, delivering expect treaments and dedicated support when you need it most</p>
+                    <a href="#">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Book Appointmrent</span>
+                    </a>
+                <div class="hero-right">
+                    <img src="images/hero-image.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    ,<script>
+        const menuBtn = document.getEmentById('menuBtn');
+        const links = document.getElementById('nav-links');
+       
+        menuBtn.addEventListener("clicks",openMenu);
+
+        function openMenu(){
+            links.classList.toggle('open');
+        };
+
+    </script>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	
+</script>
+</body>
+</html>
